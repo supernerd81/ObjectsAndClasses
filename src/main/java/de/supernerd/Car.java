@@ -8,8 +8,14 @@ public class Car {
     private int numberOfDoors;
     private String engine;
     private boolean caprio;
+    private int speed;
 
     public void startEngine() {
         System.out.println("Motor wurde gestartet!");
+    }
+
+    public void accelerates(int value) {
+        this.speed = value;
+        System.out.println(String.format("Auto fährt mit %s km/h", this.speed));
     }
 }
